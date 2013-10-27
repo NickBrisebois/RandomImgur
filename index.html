@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Imgur Roulette</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="container"> <!-- Main Container -->
+    <div id="sidebar">
+        <a class="loadButton" id="loadImage" onclick="newImage();" href="#">Load An Image</a>
+        <a class="loadButton" id="openImage" href="" target="_blank">Open Image in New Tab</a>
+        <h1>Image History</h1>  
+        <!-- Images Go Here -->
+    </div>
+    
+    <div id="main">
+        <div id="welcome">
+            <h1>Welcome To ImgurRoulette.</h1>
+            <h2>To Start, just press the "Load An Image" button</h2>    
+        </div>
+        <img src="" id="image" onload="checkImage()"/>    
+        <span id="information"></span>
+    </div>
+    
+</div>
+</body> 
+    <script type="text/javascript" src="roulette.js"></script>
+</html>
